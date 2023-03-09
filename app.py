@@ -8,10 +8,10 @@ def check_integer():
     value = data.get('integer')
     if value is not None:
         if value > 100:
-            result = "higher than 100"
+            result = "high"
         else:
-            result = "lower than 100"
-        return jsonify({"Integer": result})
+            result = "low"
+        return jsonify({"result": result})
     else:
         return jsonify({"error": "Invalid input"})
 
